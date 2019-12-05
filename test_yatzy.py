@@ -28,8 +28,8 @@ def test_sum_of_twos():
 
 
 def test_threes():
-    assert 6 == Yatzy.threes(1, 2, 3, 2, 3)
-    assert 12 == Yatzy.threes(2, 3, 3, 3, 3)
+    assert 6 == Yatzy.sum_of_threes(1, 2, 3, 2, 3)
+    assert 12 == Yatzy.sum_of_threes(2, 3, 3, 3, 3)
 
 
 def test_fours_test():
