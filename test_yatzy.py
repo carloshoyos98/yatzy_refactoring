@@ -23,8 +23,8 @@ def test_sum_total_of_ones():
 
 
 def test_2s():
-    assert 4 == Yatzy.twos(1, 2, 3, 2, 6)
-    assert 10 == Yatzy.twos(2, 2, 2, 2, 2)
+    assert 4 == Yatzy.sum_of_twos(1, 2, 3, 2, 6)
+    assert 10 == Yatzy.sum_of_twos(2, 2, 2, 2, 2)
 
 
 def test_threes():
