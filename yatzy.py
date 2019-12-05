@@ -1,12 +1,12 @@
 class Yatzy:
 
     @staticmethod
-    def chance(*dados):
+    def chance(*dice):
 
-        suma_dados = 0
-        for dado in dados:
-            suma_dados += dado
-        return suma_dados
+        sum_dice = 0
+        for die in dice:
+            sum_dice += die
+        return sum_dice
 
     @staticmethod
     def yatzy(dice):
