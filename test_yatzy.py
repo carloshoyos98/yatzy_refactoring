@@ -15,11 +15,11 @@ def test_yatzy_scores_50():
     assert Yatzy.yatzy(6, 6, 6, 6, 3) == 0
 
 
-def test_1s():
+def test_sum_total_of_ones():
     assert Yatzy.sum_of_ones(1, 2, 3, 4, 5) == 1
-    assert 2 == Yatzy.sum_of_ones(1, 2, 1, 4, 5)
-    assert 0 == Yatzy.sum_of_ones(6, 2, 2, 4, 5)
-    assert 4 == Yatzy.sum_of_ones(1, 2, 1, 1, 1)
+    assert Yatzy.sum_of_ones(1, 2, 1, 4, 5) == 2
+    assert Yatzy.sum_of_ones(6, 2, 2, 4, 5) == 0
+    assert Yatzy.sum_of_ones(1, 2, 1, 1, 1) == 4
 
 
 def test_2s():

@@ -1,7 +1,7 @@
 [
   "test_yatzy.py::test_chance_scores_sum_of_all_dice",
   "test_yatzy.py::test_yatzy_scores_50",
-  "test_yatzy.py::test_1s",
+  "test_yatzy.py::test_sum_total_of_ones",
   "test_yatzy.py::test_2s",
   "test_yatzy.py::test_threes",
   "test_yatzy.py::test_fours_test",
