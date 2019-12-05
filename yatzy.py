@@ -9,7 +9,7 @@ class Yatzy:
         return sum_dice
 
     @staticmethod
-    def yatzy(dice):
+    def yatzy(*dice):
         for die in dice:
             if dice.count(die) == len(dice):
                 return 50
