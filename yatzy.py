@@ -10,13 +10,11 @@ class Yatzy:
 
     @staticmethod
     def yatzy(dice):
-        counts = [0]*(len(dice)+1)
         for die in dice:
-            counts[die-1] += 1
-        for i in range(len(counts)):
-            if counts[i] == 5:
+            if dice.count(die) == len(dice):
                 return 50
-        return 0
+            else:
+                return 0
     
     @staticmethod
     def ones( d1,  d2,  d3,  d4,  d5):
