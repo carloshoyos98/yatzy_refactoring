@@ -27,9 +27,9 @@ def test_sum_of_twos():
     assert Yatzy.sum_of_twos(2, 2, 2, 2, 2) == 10
 
 
-def test_threes():
-    assert 6 == Yatzy.sum_of_threes(1, 2, 3, 2, 3)
-    assert 12 == Yatzy.sum_of_threes(2, 3, 3, 3, 3)
+def test_sum_of_threes():
+    assert Yatzy.sum_of_threes(1, 2, 3, 2, 3) == 6
+    assert Yatzy.sum_of_threes(2, 3, 3, 3, 3) == 12
 
 
 def test_fours_test():
