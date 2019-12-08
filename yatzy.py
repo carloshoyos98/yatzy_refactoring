@@ -56,12 +56,15 @@ class Yatzy:
         self.dice[3] = d4
         self.dice[4] = _5
     
-    def fours(self):
-        sum = 0
-        for at in range(5):
-            if (self.dice[at] == 4): 
-                sum += 4
-        return sum
+    @staticmethod
+    def sum_of_fours(*dice):
+        sum_fours = 0
+        for die in dice:
+            if die == 4:
+                sum_fours += 4
+            else:
+                continue
+        return sum_fours
     
 
     def fives(self):
