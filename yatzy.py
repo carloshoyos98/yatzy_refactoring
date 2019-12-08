@@ -46,39 +46,36 @@ class Yatzy:
             else:
                 continue
         return sum_threes
-    
 
-    def __init__(self, d1, d2, d3, d4, _5):
-        self.dice = [0]*5
-        self.dice[0] = d1
-        self.dice[1] = d2
-        self.dice[2] = d3
-        self.dice[3] = d4
-        self.dice[4] = _5
-    
-    def fours(self):
-        sum = 0
-        for at in range(5):
-            if (self.dice[at] == 4): 
-                sum += 4
-        return sum
-    
+    @staticmethod
+    def sum_of_fours(*dice):
+        sum_fours = 0
+        for die in dice:
+            if die == 4:
+                sum_fours += 4
+            else:
+                continue
+        return sum_fours
+ 
+    @staticmethod
+    def sum_of_fives(*dice):
+        sum_fives = 0
+        for die in dice:
+            if die == 5:
+                sum_fives += 5
+            else:
+                continue
+        return sum_fives
 
-    def fives(self):
-        s = 0
-        i = 0
-        for i in range(len(self.dice)): 
-            if (self.dice[i] == 5):
-                s = s + 5
-        return s
-    
-
-    def sixes(self):
-        sum = 0
-        for at in range(len(self.dice)): 
-            if (self.dice[at] == 6):
-                sum = sum + 6
-        return sum
+    @staticmethod
+    def sum_of_sixes(*dice):
+        sum_sixes = 0
+        for die in dice:
+            if die == 6:
+                sum_sixes += 6
+            else:
+                continue
+        return sum_sixes
     
     @staticmethod
     def score_pair( d1,  d2,  d3,  d4,  d5):
