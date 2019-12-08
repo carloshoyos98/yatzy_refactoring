@@ -1,3 +1,4 @@
 {
-  "test_yatzy.py::test_fours_test": true
+  "test_yatzy.py::test_fives": true,
+  "test_yatzy.py::test_sixes_test": true
 }
