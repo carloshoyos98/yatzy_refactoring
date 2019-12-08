@@ -32,22 +32,22 @@ def test_sum_of_threes():
     assert Yatzy.sum_of_threes(2, 3, 3, 3, 3) == 12
 
 
-def test_fours_test():
-    assert 12 == Yatzy.sum_of_fours(4, 4, 4, 5, 5)
-    assert 8 == Yatzy.sum_of_fours(4, 4, 5, 5, 5)
-    assert 4 == Yatzy.sum_of_fours(4, 5, 5, 5, 5)
+def test_sum_of_fours():
+    assert Yatzy.sum_of_fours(4, 4, 4, 5, 5) == 12
+    assert Yatzy.sum_of_fours(4, 4, 5, 5, 5) == 8
+    assert Yatzy.sum_of_fours(4, 5, 5, 5, 5) == 4
 
 
-def test_fives():
-    assert 10 == Yatzy(4, 4, 4, 5, 5).fives()
-    assert 15 == Yatzy(4, 4, 5, 5, 5).fives()
-    assert 20 == Yatzy(4, 5, 5, 5, 5).fives()
+def test_sum_of_fives():
+    assert 10 == Yatzy.sum_of_fives(4, 4, 4, 5, 5)
+    assert 15 == Yatzy.sum_of_fives(4, 4, 5, 5, 5)
+    assert 20 == Yatzy.sum_of_fives(4, 5, 5, 5, 5)
 
 
-def test_sixes_test():
-    assert 0 == Yatzy(4, 4, 4, 5, 5).sixes()
-    assert 6 == Yatzy(4, 4, 6, 5, 5).sixes()
-    assert 18 == Yatzy(6, 5, 6, 6, 5).sixes()
+def test_sum_of_sixes():
+    assert 0 == Yatzy.sum_of_sixes(4, 4, 4, 5, 5)
+    assert 6 == Yatzy.sum_of_sixes(4, 4, 6, 5, 5)
+    assert 18 == Yatzy.sum_of_sixes(6, 5, 6, 6, 5)
 
 
 def test_one_pair():
