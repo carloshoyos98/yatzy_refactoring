@@ -33,9 +33,11 @@ def test_sum_of_threes():
 
 
 def test_sum_of_fours():
+    assert Yatzy.sum_of_fours(4, 3, 4, 4, 4) == 16
     assert Yatzy.sum_of_fours(4, 4, 4, 5, 5) == 12
     assert Yatzy.sum_of_fours(4, 4, 5, 5, 5) == 8
     assert Yatzy.sum_of_fours(4, 5, 5, 5, 5) == 4
+
 
 
 def test_sum_of_fives():
