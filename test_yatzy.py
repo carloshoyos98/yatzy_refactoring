@@ -39,7 +39,6 @@ def test_sum_of_fours():
     assert Yatzy.sum_of_fours(4, 5, 5, 5, 5) == 4
 
 
-
 def test_sum_of_fives():
     assert 10 == Yatzy.sum_of_fives(4, 4, 4, 5, 5)
     assert 15 == Yatzy.sum_of_fives(4, 4, 5, 5, 5)
