@@ -113,17 +113,15 @@ class Yatzy:
         return score
 
     @staticmethod
-    def four_of_a_kind(_1,  _2,  d3,  d4,  d5):
-        tallies = [0]*6
-        tallies[_1-1] += 1
-        tallies[_2-1] += 1
-        tallies[d3-1] += 1
-        tallies[d4-1] += 1
-        tallies[d5-1] += 1
-        for i in range(6):
-            if (tallies[i] >= 4):
-                return (i+1) * 4
-        return 0
+    def four_of_a_kind(*dice):
+        score = 0
+        number = 6
+        while number >= 1:
+            if dice.count(number) >= 4:
+                score += 4 * number
+                break
+            number -= 1
+        return score
 
     @staticmethod
     def smallStraight(d1,  d2,  d3,  d4,  d5):
