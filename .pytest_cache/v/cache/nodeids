@@ -8,7 +8,7 @@
   "test_yatzy.py::test_sum_of_fives",
   "test_yatzy.py::test_sum_of_sixes",
   "test_yatzy.py::test_one_pair",
-  "test_yatzy.py::test_two_Pair",
+  "test_yatzy.py::test_two_pairs",
   "test_yatzy.py::test_three_of_a_kind",
   "test_yatzy.py::test_four_of_a_knd",
   "test_yatzy.py::test_smallStraight",
